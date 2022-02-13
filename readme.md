@@ -37,9 +37,11 @@ git subtree push --prefix build origin gh-pages
   - Set domain for Github pages.
 ![set-domain-github-pages](readme-static/set-domain-github-pages.png)
 
-  - Push "build" directory as "gh-pages" branch for publishing
+  - Push "build" directory as "gh-pages" branch for publishing (outside first time publish)
   ```
-  git subtree push --prefix build origin gh-pages
+  git subtree split --prefix build -b gh-pages
+  git push -f origin gh-pages:gh-pages
+  git branch -D gh-pages
   ```
 
 - **Option 2** : Run static site on top java server (command refer to point 2).
