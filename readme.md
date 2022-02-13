@@ -43,3 +43,5 @@ git subtree push --prefix build origin gh-pages
   ```
 
 - **Option 2** : Run static site on top java server (command refer to point 2).
+
+source : [Publish Github pages](https://gist.github.com/cobyism/4730490)
