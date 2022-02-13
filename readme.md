@@ -29,13 +29,13 @@ Static site will be generated at "build" directory.
 ### 5. Publish static site
 - **Option 1** : Publish as Github Pages
   - Push "build" directory as "gh-pages" branch for first time
-```
-git add build
-git subtree push --prefix build origin gh-pages
-```
+  ```
+  git add build
+  git subtree push --prefix build origin gh-pages
+  ```
 
   - Set domain for Github pages.
-![set-domain-github-pages](readme-static/set-domain-github-pages.png)
+  ![set-domain-github-pages](readme-static/set-domain-github-pages.png)
 
   - Push "build" directory as "gh-pages" branch for publishing (outside first time publish)
   ```
@@ -46,4 +46,8 @@ git subtree push --prefix build origin gh-pages
 
 - **Option 2** : Run static site on top java server (command refer to point 2).
 
-source : [Publish Github pages](https://gist.github.com/cobyism/4730490)
+
+
+**Source :**
+- [Publish Github pages](https://gist.github.com/cobyism/4730490)
+- [Publish Github pages update](https://stephenlee.info/version%20control/2021/01/13/git-force-push-subtree.html)
