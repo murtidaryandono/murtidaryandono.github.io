@@ -1,0 +1,7 @@
+project_name: daryandono.id
+project_description: Journey to the unknown.
+project_url: https://daryandono.id
+
+default_language: en
+lunr_search: true
+default_order_alphabetical: true

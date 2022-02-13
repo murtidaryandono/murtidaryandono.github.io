@@ -1,0 +1,90 @@
+---
+language: en
+---
+
+- title: '<i class="material-icons"><img src="static/home.png"></i> <b>Home</b>'
+  weight: 0
+  link: '{{ page.getRootRelativeURL() }}en/'
+
+- title: '<i class="material-icons"><img src="static/java.png"></i> <b>Java</b>'
+  link: 'java.html'
+  weight: 1
+  children:
+    - title: 'Fundamental'
+      link: 'java-fundamental.html'
+      weight: 0
+    - title: 'Java OOP Concept'
+      link: 'java-oop-concept.html'
+      weight: 1
+
+- title: '<i class="material-icons"><img src="static/browser.png"></i> <b>Web</b>'
+  link: 'web.html'
+  weight: 1
+  children:
+    - title: 'Java web basic'
+      link: 'web-fundamental.html'
+      weight: 0
+    - title: 'CRUD with MariaDB'
+      link: 'web-crud.html'
+      weight: 1
+
+- title: '<i class="material-icons"><img src="static/api.png"></i> <b>REST Service</b>'
+  link: 'rest.html'
+  weight: 1
+  children:
+    - title: 'Fundamental'
+      link: 'rest-fundamental.html'
+      weight: 0
+    - title: 'Basic Auth'
+      link: 'rest-basic-auth.html'
+      weight: 1
+    - title: 'CRUD with MariaDB'
+      link: 'rest-crud.html'
+      weight: 2
+
+- title: '<i class="material-icons"><img src="static/browser-2.png"></i> <b>Static Site Generator</b>'
+  link: 'ssg.html'
+  weight: 1
+  children:
+    - title: 'SSG basic'
+      link: 'ssg-fundamental.html'
+      weight: 0
+    - title: 'SSG using SkyDocs'
+      link: 'ssg-skydocs.html'
+      weight: 1
+    - title: 'Github Pages using SkyDocs'
+      link: 'github-skydocs.html'
+      weight: 2
+
+- title: '<i class="material-icons"><img src="static/workflow.png"></i> <b>Rule engine</b>'
+  link: '{{ page.getRootRelativeURL() }}en/OttoFin.html'
+  weight: 1
+  children:
+    - title: 'Fundamental'
+      link: 'rules-engine-fundamental.html'
+      weight: 0
+    - title: 'Simple framework'
+      link: 'rules-engine-framework'
+      weight: 1
+
+- title: '<i class="material-icons"><img src="static/info.png"></i> <b>About</b>'
+  link: '#'
+  weight: 1
+  children:
+    - title: ' Author'
+      link: 'author.html'
+      weight: 0
+    - title: 'Tools'
+      link: 'tools.html'
+      weight: 1
+
+- title: '<i class="material-icons"><img src="static/language.png"></i> <b>Language</b>'
+  link: '#'
+  weight: 1
+  children:
+    - title: '<img src="static/icon-id-circle-32.png"> id'
+      link: '{{ page.getRootRelativeURL() }}id/'
+      weight: 0
+    - title: '<img src="static/icon-us-circle-32.png"> en'
+      link: '{{ page.getRootRelativeURL() }}en/'
+      weight: 1

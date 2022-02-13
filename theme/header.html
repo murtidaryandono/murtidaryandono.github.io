@@ -1,0 +1,43 @@
+<header>
+	<nav class="red darken-4">
+		<div class="nav-wrapper">
+			<a href="{{ page.getPageRelativeURL() }}" class="brand-logo">{{ page.getTitle() }}</a>
+			<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li><a href="{{ page.getRootRelativeURL() }}{{ page.getLanguage() }}/" title="Home"><i class="material-icons">home</i></a></li>
+				{% if project.hasLunrSearch() %}<li><a href="#" class="modal-trigger" data-target="modal-search"><i class="material-icons">search</i></a></li>{% endif %}
+				<li><a href="#"><i id="icon-print" class="material-icons">print</i></a></li>
+				<li><a href="#" class="modal-trigger" data-target="modal-infos"><i class="material-icons">info_outline</i></a></li>
+				{% if page.hasPreviousPage() %}<li><a href="{{ page.getPreviousPage() }}"><i class="material-icons">arrow_back</i></a></li>{% endif %}
+				{% if page.hasNextPage() %}<li><a href="{{ page.getNextPage() }}"><i class="material-icons">arrow_forward</i></a></li>{% endif %}
+			</ul>
+		</div>
+	</nav>
+
+	<div id="modal-infos" class="modal bottom-sheet">
+		<div class="modal-content">
+			<h4>Page informations</h4>
+			<p><strong>Title :</strong> {{ page.getTitle() }}.
+			<br/><strong>Language :</strong> {{ page.getLanguage() }}.
+			<br/><strong>Last modification :</strong> {{ page.getLastModificationTimeForLocale(page.getLanguage()) }}.</p>
+
+			<hr/>
+
+			<p><em>SkyDocs Material</em> created with <i class="fa fa-heart red-text" aria-hidden="true"></i> by <a href="https://www.skyost.eu">Skyost</a>.
+			Powered by <a href="{{ generator_website }}">{{ generator_name }}</a> {{ generator_version }}.</p>
+		</div>
+	</div>
+
+	{% if project.hasLunrSearch() %}
+		<div id="modal-search" class="modal bottom-sheet">
+			<div class="modal-content">
+				<form action="{{ page.getRootRelativeURL() }}search.html" method="get">
+					<input name="keywords" class="form-control mr-sm-2" type="search" placeholder="Keywords...">
+				</form>
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="modal-action modal-close waves-effect waves-green btn-flat" onclick="$('#modal-search form').submit();">Search</a>
+			</div>
+		</div>
+	{% endif %}
+</header>

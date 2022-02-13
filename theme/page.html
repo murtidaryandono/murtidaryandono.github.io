@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="{{ page.getLanguage() }}">
+
+	{{ includeFile("head.html") }}
+
+	<body>
+		<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+
+		<ul id="slide-out" class="sidenav sidenav-fixed">
+			<br/>
+			<li><h1><img src="{{page.getRootRelativeURL()}}/assets/img/icon-square-corner-64.png"></h1></li>
+			<li><h1><a href="{{ page.getRootRelativeURL() }}{{ page.getLanguage() }}/">{{ project.getName() }}</a></h1></li>
+			{{ page.getMenu() }}
+		</ul>
+
+		<div id="content" class="col s10">
+
+			{{ includeFile("header.html") }}
+
+			<article>
+
+				{{ page.getContent() }}
+
+			</article>
+
+		</div>
+
+		{{ includeFile("footer.html") }}
+
+	</body>
+</html>

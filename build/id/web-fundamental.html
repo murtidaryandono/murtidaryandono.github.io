@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8"/>
+<title>Dasar pemrograman Java untuk web - daryandono.id</title>
+
+<meta name="description" content="Journey to the unknown."/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="generator" content="SkyDocs v0.7.4 Beta"/>
+
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Dasar pemrograman Java untuk web - daryandono.id"/>
+<meta property="og:site_name" content="daryandono.id"/>
+<meta property="og:url" content="https://daryandono.id/id/web-fundamental.html"/>
+<meta property="og:description" content="Journey to the unknown."/>
+<meta property="og:image" content="https://daryandono.id/assets/img/icon.png"/>
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Dasar pemrograman Java untuk web - daryandono.id"/>
+<meta name="twitter:site" content="daryandono.id"/>
+<meta name="twitter:creator" content="@Skyost_"/>
+<meta name="twitter:url" content="https://daryandono.id/id/web-fundamental.html"/>
+<meta name="twitter:description" content="Journey to the unknown."/>
+<meta name="twitter:image" content="https://daryandono.id/assets/img/icon.png"/>
+
+
+<meta id="theme-color" name="theme-color" content="#b81c1c"/>
+<link rel="shortcut icon" type="x/icon" href="../assets/img/icon-square-corner-64.ico"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/css/materialize.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+<link rel="stylesheet" type="text/css" href="../assets/css/page.css"/>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+<ul id="slide-out" class="sidenav sidenav-fixed">
+<br/>
+<li><h1><img src="..//assets/img/icon-square-corner-64.png"></h1></li>
+<li><h1><a href="../id/">daryandono.id</a></h1></li>
+<ul>
+<li>
+<a href="../id/"><i class="material-icons"><img src="static/home.png"></i> <b>Beranda</b></a>
+</li>
+<li>
+<a href="java.html"><i class="material-icons"><img src="static/java.png"></i> <b>Java</b></a>
+<ul>
+<li>
+<a href="java-fundamental.html">Dasar pemrograman Java</a>
+</li>
+<li>
+<a href="java-oop-concept.html">Konsep PBO Java</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="web.html"><i class="material-icons"><img src="static/browser.png"></i> <b>Web</b></a>
+<ul>
+<li>
+<a href="web-fundamental.html">Dasar web Java </a>
+</li>
+<li>
+<a href="web-crud.html">CRUD dengan MariaDB</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="rest.html"><i class="material-icons"><img src="static/api.png"></i> <b>Layanan REST</b></a>
+<ul>
+<li>
+<a href="rest-basic.html">Dasar layanan REST</a>
+</li>
+<li>
+<a href="rest-basic-auth.html">Basic Auth</a>
+</li>
+<li>
+<a href="rest-crud.html">CRUD dengan MariaDB</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="ssg.html"><i class="material-icons"><img src="static/browser.png"></i> <b>Generator situs statis</b></a>
+<ul>
+<li>
+<a href="ssg-fundamental.html">Dasar generator situs statis</a>
+</li>
+<li>
+<a href="ssg-skydocs.html">Situs statis dengan SkyDocs</a>
+</li>
+<li>
+<a href="github-skydocs.html">Github Pages using SkyDocs</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="rules-engine.html"><i class="material-icons"><img src="static/workflow.png"></i> <b>Mesin aturan</b></a>
+<ul>
+<li>
+<a href="rules-engine-fundamental.html">Dasar mesin aturan</a>
+</li>
+<li>
+<a href="rules-engine-framework.html">Mesin aturan sederhana</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#"><i class="material-icons"><img src="static/info.png"></i> <b>Tentang</b></a>
+<ul>
+<li>
+<a href="author.html">Penulis</a>
+</li>
+<li>
+<a href="tools.html">Alat bantu</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#"><i class="material-icons"><img src="static/language.png"></i> <b>Bahasa</b></a>
+<ul>
+<li>
+<a href="../id/"><img src="static/icon-id-circle-32.png"> id</a>
+</li>
+<li>
+<a href="../en/"><img src="static/icon-us-circle-32.png"> en</a>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+<div id="content" class="col s10">
+<header>
+<nav class="red darken-4">
+<div class="nav-wrapper">
+<a href="/id/web-fundamental.html" class="brand-logo">Dasar pemrograman Java untuk web</a>
+<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+<ul class="right hide-on-med-and-down">
+<li><a href="../id/" title="Home"><i class="material-icons">home</i></a></li>
+<li><a href="#" class="modal-trigger" data-target="modal-search"><i class="material-icons">search</i></a></li>
+<li><a href="#"><i id="icon-print" class="material-icons">print</i></a></li>
+<li><a href="#" class="modal-trigger" data-target="modal-infos"><i class="material-icons">info_outline</i></a></li>
+<li><a href="web.html"><i class="material-icons">arrow_back</i></a></li>
+<li><a href="web-crud.html"><i class="material-icons">arrow_forward</i></a></li>
+</ul>
+</div>
+</nav>
+<div id="modal-infos" class="modal bottom-sheet">
+<div class="modal-content">
+<h4>Page informations</h4>
+<p><strong>Title :</strong> Dasar pemrograman Java untuk web.
+<br/><strong>Language :</strong> id.
+<br/><strong>Last modification :</strong> 13 Feb 2022 16.43.16.</p>
+<hr/>
+<p><em>SkyDocs Material</em> created with <i class="fa fa-heart red-text" aria-hidden="true"></i> by <a href="https://www.skyost.eu">Skyost</a>.
+Powered by <a href="https://skydocs.skyost.eu">SkyDocs</a> v0.7.4 Beta.</p>
+</div>
+</div>
+<div id="modal-search" class="modal bottom-sheet">
+<div class="modal-content">
+<form action="../search.html" method="get">
+<input name="keywords" class="form-control mr-sm-2" type="search" placeholder="Keywords...">
+</form>
+</div>
+<div class="modal-footer">
+<a href="#" class="modal-action modal-close waves-effect waves-green btn-flat" onclick="$('#modal-search form').submit();">Search</a>
+</div>
+</div>
+</header>
+<article>
+<h3 id="contents">Contents</h3>
+<ol>
+<li><a href="web-fundamental.html#1-version">Version</a> <br/></li>
+<li><a href="web-fundamental.html#2-description">Description</a> <br/></li>
+<li><a href="web-fundamental.html#3-technology-stack">Technology stack</a> <br/></li>
+<li><a href="web-fundamental.html#4-architecture">Architecture</a> <br/></li>
+<li><a href="web-fundamental.html#5-flow-diagram">Flow diagram</a> <br/></li>
+<li><a href="web-fundamental.html#6-sequence-diagram">Sequence diagram</a> <br/></li>
+<li><a href="web-fundamental.html#7-database-design">Database design</a> <br/></li>
+<li><a href="web-fundamental.html#8-api-producer">API producer</a> <br/></li>
+<li><a href="web-fundamental.html#9-api-consumer">API consumer</a> <br/></li>
+<li><a href="web-fundamental.html#10-project-structure">Project structure</a> <br/></li>
+<li><a href="web-fundamental.html#11-development-steps">Development steps</a> <br/></li>
+<li><a href="web-fundamental.html#12-environment-properties">Environment properties</a> <br/></li>
+<li><a href="web-fundamental.html#13-running-application">Running application</a> <br/></li>
+<li><a href="web-fundamental.html#14-tools">Tools</a> <br/></li>
+<li><a href="web-fundamental.html#15-author">Author</a></li>
+</ol>
+<h3 id="1-version">1. Version</h3>
+<table>
+<thead>
+<tr><th>Date</th><th>Version</th><th>Author</th><th>Changelog</th></tr>
+</thead>
+<tbody>
+<tr><td>2022-02-07</td><td>1.0.0</td><td>Murti Daryandono</td><td>Initial release</td></tr>
+</tbody>
+</table>
+<h3 id="2-description">2. Description</h3>
+<p><strong>Web example basic (project : example-web-fundamental)</strong> is a sample project that intended to help Java developers create basic web application using Java
+based technologies based on MVC (Model View Controller) concept.
+In this sample project, we will create to-do application with some feature will be provided, such as :</p>
+<ul>
+<li>Page templating</li>
+<li>Read environment properties</li>
+<li>Service class based on business logic to-do list</li>
+<li>Controller class to handle request and response (show, add, remove &amp; update to-do list)</li>
+<li>Create UI for to-do list</li>
+<li>Test application</li>
+</ul>
+<p>Complete source code can be found at Github from <a href="https://github.com/murtidaryandono/example-web-fundamental">here</a></p>
+<h3 id="3-technology-stack">3. Technology stack</h3>
+<ul>
+<li>Blade : Java web framework (here are <a href="https://github.com/lets-blade/blade">blade link</a> &amp; <a href="https://www.baeldung.com/blade">baeldung link</a>)</li>
+<li>Gson : JSON manipulation tools from Google (<a href="https://github.com/google/gson">Gson link</a>)</li>
+<li>Jetbrick : Java page templating (<a href="https://github.com/lets-blade/blade-demos/tree/master/blade-template">Jetbrick link</a>)</li>
+<li>SL4J : Java logging framework</li>
+<li>Project Lombok : Java getter &amp; setter auto generation (<a href="https://projectlombok.org/">Project Lombok link</a>)</li>
+<li>JUnit : Java unit test framework</li>
+<li>Htmx : HTML framework (<a href="https://htmx.org/">Htmx link</a>)</li>
+<li>Bulma : CSS framework (<a href="https://bulma.io/">Bulma link</a>)</li>
+<li>Font Awesome : Font framework (<a href="https://fontawesome.com/">Font Awesome link</a>)</li>
+</ul>
+<h3 id="4-architecture">4. Architecture</h3>
+<div class="mermaid">
+graph TD
+A[Web browser] --- |Request/Response| B[Blade - Web framework]
+B --- |Server| C[Netty]
+B --- |Template| D[Jetbrick]
+B --- |AJAX| H
+D --- |Page| H
+C --- |JVM| F[Java]
+B --- |Logging| G[SL4J]
+subgraph Presentation layer
+H[HTML] --- I[Htmx]
+H --- J[Bulma]
+H --- K[Font Awesome]
+end
+</div>
+<h3 id="5-flow-diagram">5. Flow diagram</h3>
+<p>TBD</p>
+<h3 id="6-sequence-diagram">6. Sequence diagram</h3>
+<ol>
+<li>
+<p>Index page</p>
+<ul>
+<li>Path (GET) : /todo</li>
+<li>Diagram
+<div class="mermaid">
+sequenceDiagram
+participant Requestor
+participant Controller
+participant Service
+participant Page
+Requestor ->> Controller : HTTP GET request "/todo"
+Controller ->> Service : Process request
+Service ->> Page : Load index.html
+Page -->> Service : Return index.html
+Service -->> Controller : Process response
+Controller -->> Requestor : Render page
+</div>
+</li>
+<li>Response
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;To-do list application&lt;/title&gt;
+  &lt;link href=&quot;/static/css/bulma.min.css&quot; rel=&quot;stylesheet&quot;/&gt;
+  &lt;script src=&quot;/static/js/htmx.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div&gt;
+      &lt;table&gt;
+          &lt;thead&gt;
+              &lt;tr&gt;
+                  ...
+              &lt;/tr&gt;
+          &lt;/thead&gt;
+          &lt;tbody&gt;
+              &lt;tr&gt;
+                  &lt;!-- list of to-do here --&gt;
+              &lt;/tr&gt;
+          &lt;/tbody&gt;
+      &lt;/table&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Add to-do item on the list</p>
+<ul>
+<li>Path (POST) : /todo</li>
+<li>Query param : todoItem</li>
+<li>Diagram
+<div class="mermaid">
+sequenceDiagram
+participant Requestor
+participant Controller
+participant Service
+Requestor ->> Controller : HTTP POST request "/todo"
+Controller ->> Service : Add to-do list (query param "todoItem")
+Service -->> Controller : Return to-do list ("<tr>...</tr>")
+Controller -->> Requestor : Render page
+</div>
+</li>
+<li>Response
+<pre><code class="language-html">&lt;tr&gt;
+   &lt;!-- to-do list --&gt;
+&lt;/tr&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Remove to-do item on the list</p>
+<ul>
+<li>Path (DELETE) : /todo</li>
+<li>Query param : todoId</li>
+<li>Diagram
+<div class="mermaid">
+sequenceDiagram
+participant Requestor
+participant Controller
+participant Service
+Requestor ->> Controller : HTTP DELETE request "/todo"
+Controller ->> Service : Remove to-do list (query param "todoId")
+Service -->> Controller : Return to-do list ("<tr>...</tr>")
+Controller -->> Requestor : Render page
+</div>
+</li>
+<li>Response
+<pre><code class="language-html">&lt;tr&gt;
+   &lt;!-- to-do list --&gt;
+&lt;/tr&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>Update to-do item on the list</p>
+<ul>
+<li>Path (PUT) : /todo</li>
+<li>Query param : todoId, todoItem</li>
+<li>Diagram
+<div class="mermaid">
+sequenceDiagram
+participant Requestor
+participant Controller
+participant Service
+Requestor ->> Controller : HTTP PATCH request "/todo"
+Controller ->> Service : Update to-do list (query param "todoId, todoItem")
+Service -->> Controller : Return to-do list ("<tr>...</tr>")
+Controller -->> Requestor : Render page
+</div>
+</li>
+<li>Response
+<pre><code class="language-html">&lt;tr&gt;
+   &lt;!-- to-do list --&gt;
+&lt;/tr&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="7-database-design">7. Database design</h3>
+<p>N/A</p>
+<h3 id="8-api-producer">8. API producer</h3>
+<p>N/A</p>
+<h3 id="9-api-consumer">9. API Consumer</h3>
+<p>N/A</p>
+<h3 id="10-project-structure">10. Project structure</h3>
+<p>TBD</p>
+<h3 id="11-development-steps">11. Development steps</h3>
+<p>TBD</p>
+<h3 id="12-environment-properties">12. Environment properties</h3>
+<table>
+<thead>
+<tr><th>Environment</th><th>File properties</th></tr>
+</thead>
+<tbody>
+<tr><td>Development</td><td>application.properties</td></tr>
+<tr><td>Staging</td><td>application-stg.properties</td></tr>
+<tr><td>Production</td><td>application-prd.properties</td></tr>
+</tbody>
+</table>
+<p>Contents of environment properties are :</p>
+<pre><code># server configuration
+server.port=[port value where your application will run]
+
+# application configuration
+mvc.statics=[path to static directory]
+mvc.statics.show-list=[true if you want to be show via url]
+</code></pre>
+<h3 id="13-running-application">13. Running application</h3>
+<ul>
+<li>Run in development environment</li>
+</ul>
+<pre><code>java -jar target/web-example-basic.jar
+</code></pre>
+<ul>
+<li>Run in staging environment</li>
+</ul>
+<pre><code>java -jar target/web-example-basic.jar --app.env=stg
+</code></pre>
+<ul>
+<li>Run in production environment</li>
+</ul>
+<pre><code>java -jar target/web-example-basic.jar --app.env=prd
+</code></pre>
+<h3 id="14-tools">14. Tools</h3>
+<ul>
+<li><a href="">Java 8</a> as main language</li>
+<li><a href="">Maven</a> as dependency manager</li>
+<li><a href="">IntelliJ</a> as Java IDE (Integrated Development Environemnt)</li>
+<li><a href="">Mermaid</a> as markdown plugin for diagram</li>
+</ul>
+<h3 id="15-author">15. Author</h3>
+<p><strong>Murti Daryandono</strong> <br/>
+<a href="mailto:murti.daryandono@gmail.com">murti.daryandono@gmail.com</a> <br/>
+<a href="https://daryandono.id">https://daryandono.id</a> <br/>
+<a href="https://twitter.com/murti_d"><img src="https://img.shields.io/twitter/follow/murti_d?style=social" alt=""/></a> <br/>
+<a href="https://github.com/murtidaryandono"><img src="https://img.shields.io/github/followers/murtidaryandono?style=social" alt=""/></a> <br/></p>
+</article>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.print/1.5.1/jQuery.print.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"></script>
+<script type="text/javascript" src="../assets/js/page.js"></script>
+<script type="text/javascript" src="../assets/localization/id.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+---
+language: id
+---
+
+- title: '<i class="material-icons"><img src="static/home.png"></i> <b>Beranda</b>'
+  weight: 0
+  link: '{{ page.getRootRelativeURL() }}id/'
+
+- title: '<i class="material-icons"><img src="static/java.png"></i> <b>Java</b>'
+  link: 'java.html'
+  weight: 1
+  children:
+    - title: 'Dasar pemrograman Java'
+      link: 'java-fundamental.html'
+      weight: 0
+    - title: 'Konsep PBO Java'
+      link: 'java-oop-concept.html'
+      weight: 1
+
+- title: '<i class="material-icons"><img src="static/browser.png"></i> <b>Web</b>'
+  link: 'web.html'
+  weight: 1
+  children:
+    - title: 'Dasar web Java '
+      link: 'web-fundamental.html'
+      weight: 0
+    - title: 'CRUD dengan MariaDB'
+      link: 'web-crud.html'
+      weight: 1
+
+- title: '<i class="material-icons"><img src="static/api.png"></i> <b>Layanan REST</b>'
+  link: 'rest.html'
+  weight: 1
+  children:
+    - title: 'Dasar layanan REST'
+      link: 'rest-basic.html'
+      weight: 0
+    - title: 'Basic Auth'
+      link: 'rest-basic-auth.html'
+      weight: 1
+    - title: 'CRUD dengan MariaDB'
+      link: 'rest-crud.html'
+      weight: 2
+
+- title: '<i class="material-icons"><img src="static/browser.png"></i> <b>Generator situs statis</b>'
+  link: 'ssg.html'
+  weight: 1
+  children:
+    - title: 'Dasar generator situs statis'
+      link: 'ssg-fundamental.html'
+      weight: 0
+    - title: 'Situs statis dengan SkyDocs'
+      link: 'ssg-skydocs.html'
+      weight: 1
+    - title: 'Github Pages using SkyDocs'
+      link: 'github-skydocs.html'
+      weight: 2
+
+- title: '<i class="material-icons"><img src="static/workflow.png"></i> <b>Mesin aturan</b>'
+  link: 'rules-engine.html'
+  weight: 1
+  children:
+    - title: 'Dasar mesin aturan'
+      link: 'rules-engine-fundamental.html'
+      weight: 0
+    - title: 'Mesin aturan sederhana'
+      link: 'rules-engine-framework.html'
+      weight: 1
+
+- title: '<i class="material-icons"><img src="static/info.png"></i> <b>Tentang</b>'
+  link: '#'
+  weight: 1
+  children:
+    - title: 'Penulis'
+      link: 'author.html'
+      weight: 0
+    - title: 'Alat bantu'
+      link: 'tools.html'
+      weight: 1
+
+- title: '<i class="material-icons"><img src="static/language.png"></i> <b>Bahasa</b>'
+  link: '#'
+  weight: 1
+  children:
+    - title: '<img src="static/icon-id-circle-32.png"> id'
+      link: '{{ page.getRootRelativeURL() }}id/'
+      weight: 0
+    - title: '<img src="static/icon-us-circle-32.png"> en'
+      link: '{{ page.getRootRelativeURL() }}en/'
+      weight: 1
