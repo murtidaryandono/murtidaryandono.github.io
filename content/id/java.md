@@ -1,5 +1,5 @@
 ---
-title: "Teknologi berbasis Java"
+title: "Teknologi Java"
 language: "id"
 next: "java.html"
 ---

@@ -49,7 +49,7 @@ language: id
     - title: 'Dasar generator situs statis'
       link: 'ssg-fundamental.html'
       weight: 0
-    - title: 'Situs statis dengan SkyDocs'
+    - title: 'Situs statis dgn SkyDocs'
       link: 'ssg-skydocs.html'
       weight: 1
     - title: 'Github Pages dgn SkyDocs'
