@@ -52,7 +52,7 @@ language: id
     - title: 'Situs statis dengan SkyDocs'
       link: 'ssg-skydocs.html'
       weight: 1
-    - title: 'Github Pages using SkyDocs'
+    - title: 'Github Pages dgn SkyDocs'
       link: 'github-skydocs.html'
       weight: 2
 
