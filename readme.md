@@ -30,16 +30,16 @@ Static site will be generated at "build" directory.
 - **Option 1** : Publish as Github Pages
   - Push "build" directory as "gh-pages" branch for first time
 ```
+git add build
 git subtree push --prefix build origin gh-pages
 ```
 
   - Set domain for Github pages.
 ![set-domain-github-pages](readme-static/set-domain-github-pages.png)
 
-  - To update build
+  - Push "build" directory as "gh-pages" branch for publishing
   ```
-  cd build
-  git push origin gh-pages
+  git subtree push --prefix build origin gh-pages
   ```
 
 - **Option 2** : Run static site on top java server (command refer to point 2).
