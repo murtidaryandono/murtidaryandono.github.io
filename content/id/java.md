@@ -19,7 +19,7 @@ Sumber : [Wikipedia](https://en.wikipedia.org/wiki/Java_(programming_language))
 graph TD
   subgraph Java runtime
   A[Kode sumber Java -> .java] --> |Kompilasi| B[Kode bit Java -> .class]
-  B --> |Penterjemahan| C[Mesin virtual Java]
+  B --> |Penerjemahan| C[Mesin virtual Java]
   C --> |Berjalan| D[Sistem operasi - Android]
   D --> |Native API| E[Smartphone]
   D --> |Native API| I[Tablet]
