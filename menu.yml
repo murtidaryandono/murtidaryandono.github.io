@@ -52,7 +52,7 @@ language: en
     - title: 'SSG using SkyDocs'
       link: 'ssg-skydocs.html'
       weight: 1
-    - title: 'Github Pages w/ SkyDocs'
+    - title: 'Github Pages SkyDocs'
       link: 'github-skydocs.html'
       weight: 2
 
