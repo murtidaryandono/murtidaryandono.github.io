@@ -37,7 +37,7 @@ Static site will be generated at "build" directory.
   - Set domain for Github pages.
   ![set-domain-github-pages](readme-static/set-domain-github-pages.png)
 
-  - Push "build" directory as "gh-pages" branch for publishing (outside first time publish)
+  - Push "build" directory as "gh-pages" branch for publishing (outside first time publish)va 
   ```
   git subtree split --prefix build -b gh-pages
   git push -f origin gh-pages:gh-pages
