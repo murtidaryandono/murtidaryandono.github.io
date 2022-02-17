@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<title>Search results - daryandono.id</title>
+<title>Java technology - daryandono.id</title>
 
 <meta name="description" content="Journey to the unknown."/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="generator" content="SkyDocs v0.7.4 Beta"/>
 
 <meta property="og:type" content="website"/>
-<meta property="og:title" content="Search results - daryandono.id"/>
+<meta property="og:title" content="Java technology - daryandono.id"/>
 <meta property="og:site_name" content="daryandono.id"/>
-<meta property="og:url" content="https://daryandono.id/en/search.html"/>
+<meta property="og:url" content="https://daryandono.id/en/java.html"/>
 <meta property="og:description" content="Journey to the unknown."/>
 <meta property="og:image" content="https://daryandono.id/assets/img/icon.png"/>
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Search results - daryandono.id"/>
+<meta name="twitter:title" content="Java technology - daryandono.id"/>
 <meta name="twitter:site" content="daryandono.id"/>
 <meta name="twitter:creator" content="@Skyost_"/>
-<meta name="twitter:url" content="https://daryandono.id/en/search.html"/>
+<meta name="twitter:url" content="https://daryandono.id/en/java.html"/>
 <meta name="twitter:description" content="Journey to the unknown."/>
 <meta name="twitter:image" content="https://daryandono.id/assets/img/icon.png"/>
 
@@ -132,22 +132,24 @@
 <header>
 <nav class="red darken-4">
 <div class="nav-wrapper">
-<a href="/en/search.html" class="brand-logo">Search results</a>
+<a href="/en/java.html" class="brand-logo">Java technology</a>
 <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 <ul class="right hide-on-med-and-down">
 <li><a href="../en/" title="Home"><i class="material-icons">home</i></a></li>
 <li><a href="#" class="modal-trigger" data-target="modal-search"><i class="material-icons">search</i></a></li>
 <li><a href="#"><i id="icon-print" class="material-icons">print</i></a></li>
 <li><a href="#" class="modal-trigger" data-target="modal-infos"><i class="material-icons">info_outline</i></a></li>
+<li><a href="/en/index.html"><i class="material-icons">arrow_back</i></a></li>
+<li><a href="java.html"><i class="material-icons">arrow_forward</i></a></li>
 </ul>
 </div>
 </nav>
 <div id="modal-infos" class="modal bottom-sheet">
 <div class="modal-content">
 <h4>Page informations</h4>
-<p><strong>Title :</strong> Search results.
+<p><strong>Title :</strong> Java technology.
 <br/><strong>Language :</strong> en.
-<br/><strong>Last modification :</strong> Feb 17, 2022, 10:24:39 PM.</p>
+<br/><strong>Last modification :</strong> Feb 13, 2022, 7:28:58 PM.</p>
 <hr/>
 <p><em>SkyDocs Material</em> created with <i class="fa fa-heart red-text" aria-hidden="true"></i> by <a href="https://www.skyost.eu">Skyost</a>.
 Powered by <a href="https://skydocs.skyost.eu">SkyDocs</a> v0.7.4 Beta.</p>
@@ -165,86 +167,28 @@ Powered by <a href="https://skydocs.skyost.eu">SkyDocs</a> v0.7.4 Beta.</p>
 </div>
 </header>
 <article>
-<h1>Search results</h1>
-<p>Here are your search results :</p>
-<p id="loading"><em>Loading...</em></p>
-<ul id="results" style="display: none; padding-left: 0; list-style-type: none;"></ul>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.4/lunr.min.js"></script>
-<script type="text/javascript">
-
-	const PAGES = {'-id-page.html': {title: 'New page', content: 'PageThis is just a new page. You can edit it if you want !Paragraph 1Maecenas ipsum velit, consectetuer eu, lobortis ut, dictum at, dui. ...', url: 'id/page.html'}, '-en-tools.html': {title: 'Tools', content: 'Static Site Generator : SkyDocs Template : Markdown Menu icon : FlaticonFlag icon : icons8', url: 'en/tools.html'}, '-en-web-fundamental.html': {title: 'Web basic tutorial', content: 'ContentsVersion Description Technology stack Architecture Flow diagram Sequence diagram Database design API producer API consumer Project...', url: 'en/web-fundamental.html'}, '-id-author.html': {title: 'Penulis', content: 'Murti Daryandono Email : murti.daryandono@gmail.com Web : https://daryandono.id Twitter :  Github : ', url: 'id/author.html'}, '-id-java.html': {title: 'Teknologi Java', content: 'Java adalah bahasa pemrograman berorientasi objek tingkat tinggi, berbasis kelas, yang dirancang untuk memiliki dependensi implementasi s...', url: 'id/java.html'}, '-id-web-fundamental.html': {title: 'Dasar pemrograman Java untuk web', content: 'ContentsVersion Description Technology stack Architecture Flow diagram Sequence diagram Database design API producer API consumer Project...', url: 'id/web-fundamental.html'}, '-en-author.html': {title: 'Author', content: 'Murti Daryandono Email : murti.daryandono@gmail.com Web : https://daryandono.id Twitter :  Github : ', url: 'en/author.html'}, '-en-index.html': {title: 'Home', content: 'Journey to the unknown Java worldI am a Java and software engineering enthusiast, and this is a place where i will share my journey to le...', url: 'en/index.html'}, '-en-java.html': {title: 'Java technology', content: 'Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as po...', url: 'en/java.html'}, '-id-web.html': {title: 'Teknologi web', content: 'Web is the most common platform that being used by institution/people to communicate each other. Java is one of reliable technology provi...', url: 'id/web.html'}, '-en-web.html': {title: 'Web technology', content: 'Web is the most common platform that being used by institution/people to communicate each other. Java is one of reliable technology provi...', url: 'en/web.html'}, '-id-tools.html': {title: 'Alat bantu', content: 'Static Site Generator : SkyDocs Template : Markdown Menu icon : FlaticonFlag icon : icons8', url: 'id/tools.html'}, '-en-page.html': {title: 'New page', content: 'PageThis is just a new page. You can edit it if you want !Paragraph 1Maecenas ipsum velit, consectetuer eu, lobortis ut, dictum at, dui. ...', url: 'en/page.html'}, '-id-index.html': {title: 'Beranda', content: 'Perjalanan menuju dunia antah berantah JavaSaya adalah penggemar Java serta rekayasa perangkat lunak, dan ini adalah tempat di mana saya ...', url: 'id/index.html'}};
-
-</script>
-<script type="text/javascript">
-	(function() {
-        let searchTerm = getQueryVariable('keywords');
-		if(!searchTerm) {
-			displaySearchResults(0, 0);
-			return;
-		}
-        let idx = lunr(function() {
-			this.field('id');
-			this.field('title', {
-				boost: 10
-			});
-			this.field('content');
-			this.field('url');
-			
-			for(let page in PAGES) { // Add the data to lunr
-				this.add({
-					'id': page,
-					'title': PAGES[page].title,
-					'content': PAGES[page].content,
-					'url': PAGES[page].url
-				});
-			}
-		});
-        let results = idx.search(searchTerm); // Get lunr to perform a search
-		displaySearchResults(results, PAGES);
-	})();
-
-	/**
-	* Extracts a variable from the url.
-	*/
-
-	function getQueryVariable(variable) {
-        let query = window.location.search.substring(1);
-        let vars = query.split('&');
-
-		for(let i = 0; i < vars.length; i++) {
-            let pair = vars[i].split('=');
-
-			if(pair[0] === variable) {
-				return decodeURIComponent(pair[1].replace(/\+/g, '%20'));
-			}
-		}
-	}
-
-	/**
-	* Displays the search results on the page.
-	*/
-
-	function displaySearchResults(results, pages) {
-        let searchResults = document.getElementById('results');
-
-		if(results.length) {
-            let appendString = '';
-
-			for(let i = 0; i < results.length; i++) {	// Iterate over the results
-                let item = pages[results[i].ref];
-				appendString += '<li><a href="' + item.url + '"><h2>' + item.title + '</h2></a>';
-				appendString += '<p>' + item.content + '...</p></li>';
-			}
-
-			searchResults.innerHTML = appendString;
-		}
-		else {
-			searchResults.innerHTML = '<li>No result.</li>';
-		}
-		searchResults.style.display = '';
-		document.getElementById('loading').style.display = 'none';
-	}
-</script>
+<p><strong>Java</strong> is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need to recompile. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them. The Java runtime provides dynamic capabilities (such as reflection and runtime code modification) that are typically not available in traditional compiled languages. As of 2019, Java was one of the most popular programming languages in use according to GitHub, particularly for client–server web applications, with a reported 9 million developers.</p>
+<p>Java was originally developed by James Gosling at Sun Microsystems and released in May 1995 as a core component of Sun Microsystems' Java platform. The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses. As of May 2007, in compliance with the specifications of the Java Community Process, Sun had relicensed most of its Java technologies under the GPL-2.0-only license. Oracle offers its own HotSpot Java Virtual Machine, however the official reference implementation is the OpenJDK JVM which is free open-source software and used by most developers and is the default JVM for almost all Linux distributions.</p>
+<p>As of October 2021, Java 17 is the latest version. Java 8, 11 and 17 are the current long-term support (LTS) versions. Oracle released the last zero-cost public update for the legacy version Java 8 LTS in January 2019 for commercial use, although it will otherwise still support Java 8 with public updates for personal use indefinitely. Other vendors have begun to offer zero-cost builds of OpenJDK 8 and 11 that are still receiving security and other upgrades.</p>
+<p>Oracle (and others) highly recommend uninstalling outdated and unsupported versions of Java, due to unresolved security issues in older versions.[22] Oracle advises its users to immediately transition to a supported version, such as one of the LTS versions (8, 11, 17).</p>
+<p>Source : <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Wikipedia</a></p>
+<p><strong>Java runtime illustration</strong></p>
+<div class="mermaid">
+graph TD
+subgraph Java runtime
+A[Java source code -> .java] --> |Compile| B[Java byte code -> .class]
+B --> |Interpret| C[Java virtual machine]
+C --> |Run| D[Operating system - Android]
+D --> |Native API| E[Smartphone]
+D --> |Native API| I[Tablet]
+C --> |Run| F[Operating system - Linux]
+F --> |Native API| G[PC/Laptop]
+F --> |Native API| H[Server]
+C --> |Run| J[Operating system - Windows]
+J --> |Native API| G[PC/Laptop]
+J --> |Native API| H[Server]
+end
+</div>
 </article>
 </div>
 
